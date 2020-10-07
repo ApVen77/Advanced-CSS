@@ -2,13 +2,59 @@ body {
     background-color: #eeef;
 }
 
+
+h1 {
+
+    border: black solid 10px;
+    border-radius: 20%;
+    font-size: 25px;
+    color: green;
+    width: 30%;
+    position: relative;
+    animation-name: myannie;
+    animation-duration: 10s;
+    animation-delay: 1s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    animation-direction: reverse;
+    animation-timing-function: ease-in-out;
+}
+
 h3 {
+
+    color: red;
+    font-size: 25px;
     font-family: 'Sansita Swashed', cursive;
-    color: red; 
-    font-size: 25px; 
     animation-name: annie;
     animation-duration: 10s;
+    animation-delay: 9s;
+    animation-iteration-count: 1;
 }
+
+
+@keyframes myannie {
+
+    0% {
+        color: green; left: 0px; top: 0px;
+     }
+
+ 
+
+    50% {
+        color: purple; left: 250px; top:0px;
+    }
+
+    100% { 
+        color: green; left: -50px; top: 0px;
+    }
+
+
+
+
+}
+
+
+
 
 @keyframes annie {
     0% { font-family: 'Sansita Swashed', cursive;
@@ -33,7 +79,7 @@ h3 {
         color: black; 
         font-size: 25px;
         border: solid green 10px;
-    background-color: rebeccapurple;  }
+        background-color: rebeccapurple;  }
 
 
 }
