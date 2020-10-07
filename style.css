@@ -1,0 +1,41 @@
+body {
+    background-color: #eeef;
+}
+
+h3 {
+    font-family: 'Sansita Swashed', cursive;
+    color: red; 
+    font-size: 25px; 
+    animation-name: annie;
+    animation-duration: 10s;
+}
+
+@keyframes annie {
+    0% { font-family: 'Sansita Swashed', cursive;
+        color: red; 
+        font-size: 25px; 
+    }
+
+    25% {font-family: cursive;
+    color: rgb(252, 90, 90); 
+    font-size: 27px; }
+
+    50% { font-family: 'Sansita Swashed', cursive;
+        color: rgb(114, 6, 6); 
+        font-size: 29px; }
+
+    75% {  font-family: cursive;
+        color: plum; 
+        font-size: 31px; 
+
+    }
+    100% { font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        color: black; 
+        font-size: 25px;
+        border: solid green 10px;
+    background-color: rebeccapurple;  }
+
+
+}
+
+/*set 3 styles to the headings */
