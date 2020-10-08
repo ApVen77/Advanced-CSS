@@ -1,0 +1,55 @@
+body {
+    background-color: salmon;
+}
+
+.head {
+
+    height: 350px;
+    width: 200px;
+    font-size: 20px;;
+    background-color: khaki;
+    color: yellow;
+    font-family: cursive;
+    transition-property: color, background, font-family, font-size;
+    transition-duration: 4s;
+    transition-delay: 2s;
+    transition-timing-function: ease-in-out;
+}
+
+/*trigger with a pseudo-class */
+
+.head:hover {
+    background-color: green;
+    color: white; 
+    font-family: monospace;
+    font-size: 40px; 
+}
+
+div:hover {transform : scale(1.1); }
+  
+
+div { 
+    width: 70%;
+    height: 100px;
+    background-color: lawngreen;
+    margin:  50px auto;
+    background: linear-gradient(
+      53deg
+      #ccfffc
+      #ffcccf)
+}
+
+.box-1, .box-2 {
+    width: 70%;
+    height: 100px;
+    background-color: lawngreen;
+
+}
+
+.box-1:hover {
+    transform: rotate(20deg);
+  }
+  .box-2:hover {
+    transform: rotate(-55deg);
+  }
+  

@@ -1,21 +1,205 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
+    <!-- <link rel="stylesheet" type="text/css" href="transitions.css">
+    <title>Document</title> -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+    <style>
+        body {
+            text-align: center;
+            background-color: cadetblue;
 
-    <div class=head>
-        <h1>April Long</h1>
-        <ul>
-            <li>Pasta</li>
-            <li>Noodles</li>
-            <li>Ravioli</li>
-        </ul>
+        }
+
+        .cloud {
+
+            width: 100%;
+            padding: 50px 0;
+            background-color: white;
+            transition-property: transform, width;
+            transition-duration: 4s;
+            transition-timing-function: linear;
+
+        }
+
+        img:hover {
+
+            /* transform: translateX(25px); */
+        }
+
+        .cloud:hover {
+
+            transform: skew(10deg), translateX(25px);
+            cursor: pointer;
+
+
+
+        }
+
+        .circle {
+            width: 100px;
+            line-height: 0;
+            padding: 50px 0;
+            margin: 60px auto;
+            background-color: violet;
+            border-radius: 50px;
+            cursor: pointer;
+            color: white;
+            transition: background-color color 4s, transform 4s;
+
+        }
+
+        .circle:hover {
+            color: pink; 
+            background-color: turquoise;
+            
+        }
+        .skew {
+            transition: background-color color 4s, transform 4s;
+        }
+
+        .skew:hover {
+            background-color: turquoise;
+            color:yellow;
+            transform: skew(30deg);
+        }
+
+        .rotate {
+            transition: color, background-color 4s, transform 4s;
+        }
+
+
+        .rotate:hover {
+            background-color: turquoise;
+            color:green;
+            transform: rotate(360deg);
+        }
+
+        .transy {
+            transition: color, background-color 4s, transform 4s;
+        }
+
+        .transy:hover {
+            background-color: turquoise;
+            color:tomato;
+            transform: translateY(25px);
+        }
+
+        .transx {
+            transition: color, background-color 4s, transform 4s;
+        }
+
+        .transx:hover {
+            background-color: turquoise;
+            color: skyblue;
+            transform: translateX(25px);
+        }
+
+        .scale {
+            transition: color, background-color 4s, transform 4s;
+        }
+
+        .scale:hover {
+            background-color: turquoise;
+            color:rgb(101, 148, 107);
+            transform: scale(2, 3);
+        }
+
+        .three { transition: color, background-color 4s, transform 4s;
+
+        }
+
+        .three:hover {
+            background-color: turquoise;
+            color:black; 
+            transform: rotateX(90deg), rotateY(180deg), rotateZ(270deg);
+        }
+
+        .skew,
+        .rotate,
+        .transy,
+        .transx,
+        .scale,
+        .three {
+            width: 100px;
+            line-height: 0;
+            padding: 50px 0;
+            margin: 60px auto;
+            background-color: violet;
+            border-radius: 50px;
+            cursor: pointer;
+            color: white;
+            transition-property: color background-color transform;
+            transition-duration: 4s;
+        }
+
+        
+
+        
+
+        
+
+        
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+
+
+            <div class="cloud">
+
+                <img src="images/cloud2.png">
+            </div>
+
+            <div class="circle">
+                Hover Me!
+            </div>
+
+            <div class="skew">
+                Skew Me!
+            </div>
+
+            <div class="rotate">
+                Rotate Me!
+            </div>
+
+            <div class="transy">
+                TranslateX Me!
+            </div>
+            
+                    </div>
+                    <div class="row">
+
+            <div class="transx">
+                TranslateY Me!
+            </div>
+
+            <div class="scale">
+                ScaleX Me!
+            </div>
+
+            <div class="three">
+                3D!
+            </div>
+        </div>
     </div>
 
-    <h2>This will be a trnasition page</h2>
+
 </body>
+
 </html>
