@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation</title>
+    <style>
+        .sky {
+            width: 100%;
+            height: 270px;
+            background-color: skyblue;
+        }
+
+
+        .grass {
+            width: 100%;
+            height: 200px;
+            background-color: rgb(1, 105, 1);
+
+        }
+
+        .road {
+            width: 100%;
+            height: 260px;
+            background-color: rgb(92, 90, 90);
+        }
+
+        .line {
+            border: 7px dashed white;
+            height: 0px;
+            width: 100%;
+            position: relative;
+            top: 50%;
+        }
+
+        img {
+            position: absolute;
+            width: 160px;
+            bottom: 5px;
+            animation-name: car;
+            animation-duration: 3s;
+            animation-iteration-count: 5;
+            animation-delay: 3s;
+            animation-direction: alternate;
+            animation-timing-function: linear;
+            animation-fill-mode: forwards;
+        }
+
+        @keyframes car {
+
+            /* from {left: -300px}
+            to {left: 2000px} */
+
+            0% {transform: translateX(0%)}
+
+            25% {transform: translateX(400px)}
+
+            50% {transform: translateX(400px) rotate(90deg) translateY(-200px)}
+
+            75% {transform: translateX(650px)}
+
+            100% {transform: translateX(2000px)}
+
+
+        }
+
+
+         
+    </style>
+</head>
+
+<body>
+
+    <div class="sky">
+        <div class="sun">
+
+        </div>
+
+    </div>
+
+    <div class="grass">
+
+    </div>
+
+    <div class="road">
+        <div class="line">
+            <img src="images/car.jpg">
+
+        </div>
+    </div>
+
+</body>
+
+</html>
