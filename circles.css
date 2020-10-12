@@ -1,5 +1,5 @@
-body {
-    background-color: teal;
+.container {
+   background-color: blueviolet;
 }
 
 h1 {
@@ -18,7 +18,7 @@ h1 {
     color: white;
     transition-property: color, background-color, transform;
     transition-duration: 2s; 
-    transition-delay: 2s;
+    transition-delay: 0s;
     transition-timing-function: ease-in-out;
     
 }
