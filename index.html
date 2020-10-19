@@ -32,15 +32,20 @@
 
         }
 
+        body {
+        background-image: url("images/checkerboard-cross.png");
+        }
+
         ul li {
             float: left; 
             list-style-type: none;
             opacity: 0.8; 
         }
 
-        ul li a {
-                /* border: black solid 1px;  */
-                box-shadow: 10px 8px 16px 10px rgb(235, 226, 226);
+        ul li a{
+                
+                box-shadow: 0 0 10px #444444;
+                border-radius: 5%;
                 margin-right: 7px;
                 text-decoration: none;
                 width: 130px;
@@ -53,22 +58,25 @@
         }
         ul li a:hover {
             background-color: silver;
-            color: seagreen;
-            font-size: 30px;
+            color: rosybrown;
+            font-size: 27px;
+            text-decoration: none;
             
         }
         
         .dropdwn li a {
             height: 25px;
             line-height: 25px; 
-            
+           
         }
         
         .dropdwn li  {
             float: none;
+            
         }
         
         li .dropdwn {
+            overflow: hidden;
             visibility: hidden;
             /* display: none;  */
         }
@@ -83,6 +91,7 @@
     </style>
 
 <body>
+    
     <header>
         <ul>
             <li><a href="index.html">Home</a> </li>
@@ -143,6 +152,7 @@
 
 
         <hr>
+        <hr>
         <div class="row">
 
             <div class="col-6">
@@ -164,6 +174,8 @@
         </div>
 
 
+        <hr>
+        <hr>
         <hr>
         <div class="row">
             <div class="col-6">
