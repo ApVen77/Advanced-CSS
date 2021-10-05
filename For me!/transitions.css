@@ -10,7 +10,7 @@ body {
     background-color: khaki;
     color: yellow;
     font-family: cursive;
-    transition-property: color, background, font-family, font-size;
+    transition-property: color, background-color, font-family, font-size;
     transition-duration: 4s;
     transition-delay: 2s;
     transition-timing-function: ease-in-out;

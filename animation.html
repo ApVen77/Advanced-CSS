@@ -5,100 +5,106 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Animation</title>
+
     <style>
-
         .sun {
-            border-radius: 50%;
-            background-color: yellow;
+            border-radius: 50px;
             width: 100px;
+            background-color: yellow;
             line-height: 0;
-            padding: 50px 0;
-            
-        }
-        .sky {
-            width: 100%;
-            height: 270px;
-            background-color: skyblue;
+            padding: 50px 0; 
         }
 
+        .sky {
+            background-color: skyblue; 
+            width: 100%; 
+            height: 270px; 
+
+        }
 
         .grass {
-            width: 100%;
             height: 200px;
-            background-color: rgb(1, 105, 1);
-
+            width: 100%; 
+            background-color: green;
         }
 
         .road {
-            width: 100%;
-            height: 260px;
-            background-color: rgb(92, 90, 90);
+            width: 100%; 
+            background-color: slategray;
+            height: 260px; 
         }
 
-        .line {
-            border: 7px dashed white;
+        .lines {
+            border: 7px dashed white; 
             height: 0px;
-            width: 100%;
-            position: relative;
-            top: 50%;
+            width: 100%; 
+            position: absolute; 
+            top: 82%; 
         }
 
         img {
-            position: absolute;
-            width: 160px;
-            bottom: 5px;
-            animation-name: car;
-            animation-duration: 3s;
-            animation-iteration-count: 5;
-            animation-delay: 3s;
-            animation-direction: alternate;
-            animation-timing-function: linear;
+            position:absolute; 
+            width: 75px;
+            bottom: 15px; 
+            animation-name: myannie;
+            animation-delay: 2s;
             animation-fill-mode: forwards;
-        }
-
-        @keyframes car {
-
-            /* from {left: -300px}
-            to {left: 2000px} */
-
-            0% {transform: translateX(0%)}
-
-            25% {transform: translateX(400px)}
-
-            50% {transform: translateX(400px) rotate(90deg) translateY(-200px)}
-
-            75% {transform: translateX(650px)}
-
-            100% {transform: translateX(2000px)}
-
+            animation-iteration-count: 3; 
+            animation-duration: 3s;
+            animation-direction: forwards; 
 
         }
 
+        @keyframes myannie {
 
-         
+            from {left: 0px}
+            to {left: 1500px}
+            /* 0% { transform: translateX(0);}
+            25% { transform: translateX(220px);}
+            50% { transform: translateX(440px);}
+            75% { transform: translateX(700px);}
+            100% { transform: translateY(980px);} */
+
+
+        }
+
+
+
     </style>
+    
 </head>
 
 <body>
+    <header>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="animation.html">My Animation</a>
+            <a href="circles.html">Watch me Transform</a>
+            <a href="dropdwn.html">Dropdown Menu</a>
+            <a href="selectors.html">Selectors</a>
+        </nav>
+         
+
+    </header>
+
 
     <div class="sky">
         <div class="sun">
-
-        </div>
-
+        
+        </div> 
     </div>
-
+    
+    
     <div class="grass">
-
+    
     </div>
-
+    
     <div class="road">
-        <div class="line">
-            <img src="images/car.jpg">
-
+        <img src="images/car.jpg">
+        <div class="lines">
+    
         </div>
     </div>
-
 </body>
 
 </html>

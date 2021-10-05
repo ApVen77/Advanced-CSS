@@ -1,100 +1,95 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-   <style>
 
-      h1 {
-          color: purple; 
-      }
+    <style>
+        .section1 h1 {
+            color: green;
+        }
 
-      .section2 h1 {
-          color: green; 
-      }
+        h1 {
+            color: red;
+        }
 
-      .section3 p {
+        .section2 h1 {
+            color: blue;
+        }
 
-          font-size: 30px;
-          color: salmon;
-      }
+        .section3 h1 {
+            color: purple;
+        }
 
-      .section2 ul li {
-          color: darkblue;
-          font-size: 24px;
-          list-style-type: none;
-          cursor: pointer;
-          transition-property: color, transform;
-          transition-duration: 4s;
-      }
+        .section2 ul li {
+            color: pink;
+            font-size: 30px;
+            list-style-type: none;
+            transition-property: color, transform;
+            transition-duration: 4s;
+        }
 
-      .section2 ul li:hover {
-          color: pink;
-          transform:translateX(40px); 
-      }
+        .section2 ul li:hover {
+            color: black;
+            transform: translateX(40px);
+        }
+    </style>
 
-      .section1 h1 {
-          color: gold;
-          font-size: 20px;
-      }
-
-      .section1 p {
-          color: orange;
-          font-size: 40px; 
-          transition-property: color, transform;
-          transition-duration: 2s;
-      }
-
-      .section1 p:hover {
-            transform: translateX(60px);
-      }
-
-      .section2 ul .Spanish {
-          font-size: 50px;
-      }
-
-      .section3 h1 + a {
-          font-size: 50px;
-      }
-
-  
-
-
-    
-   </style>
 </head>
+
 <body>
-        <div class="section1">
-            <h1> Hello World!</h1>
-            <p>This is the English Language</p>
-        </div>
+    <header>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="animation.html">My Animation</a>
+            <a href="circles.html">Watch me Transform</a>
+            <a href="dropdwn.html">Dropdown Menu</a>
+            <a href="selectors.html">Selectors</a>
+        </nav>
 
-        <h1>Hola Mundo!</h1>
-        <p>This is the Spanish Language.</p>
 
-        <div class="section2">
-            <h1>Bonjour le Monde!</h1>
-            <p>This is the French Language.</p>
-            <ul>
-                <li>4 Languages of the World</li>
-                <li>English</li>
-                <li class="Spanish">Spanish</li>
-                <li>French</li>
-                <li>Arabic</li>
-            </ul>
-        </div>
+    </header>
 
-        <div class="section3">
-            <h1>مرحبا بالعالم</h1>
-            <p>This is the Arabic Language. </p>
-            <ul>
-                <li>4 Languages of the World</li>
-                <li>English</li>
-                <li> Spanish</li>
-                <li>French</li>
-                <li>Arabic</li>
-            </ul>
-        </div>
+    <div class="section1">
+        <h1> Hello World!</h1>
+        <p>This is the English Language</p>
+    </div>
+
+    <h1>Hola Mundo!</h1>
+    <p>This is the Spanish Language.</p>
+
+    <!--make style changes 5 to this div's <p>
+            include a transform-->
+
+    <!--make style changes to the <li> in this div
+                make seperate style changes to the 
+            'spanish' class <li>-->
+    <div class="section2">
+        <h1>Bonjour le Monde!</h1>
+        <p>This is the French Language.</p>
+        <ul>
+            <li>4 Languages of the World</li>
+            <li>English</li>
+            <li class="Spanish">Spanish</li>
+            <li>French</li>
+            <li>Arabic</li>
+        </ul>
+    </div>
+    <!--make style changes to this div's <p> tag and
+        <ul> tag. Include an animation on the <li>-->
+    <div class="section3">
+        <h1>مرحبا بالعالم</h1>
+        <p>This is the Arabic Language. </p>
+        <ul>
+            <li>4 Languages of the World</li>
+            <li>English</li>
+            <li> Spanish</li>
+            <li>French</li>
+            <li>Arabic</li>
+        </ul>
+    </div>
 </body>
+
 </html>
