@@ -1,3 +1,7 @@
+a {
+        margin: 7px;
+    }
+
 .container {
    background-color: blueviolet;
 }
@@ -6,7 +10,13 @@ h1 {
     text-align: center;
 }
 
-.hover, .rotate, .translatex, .translateY, .threeD, .skew, .scale {
+.hover,
+ .rotate, 
+ .translatex,
+  .translateY,
+   .threeD, 
+   .skew, 
+   .scale {
 
     width: 100px;
     line-height: 0;
@@ -16,65 +26,67 @@ h1 {
     border-radius: 50%;
     cursor: pointer; 
     color: white;
-    /* properties you want to transition  */
-    -moz-transition-property: color, background-color, transform;
-    transition-property: color, background-color, transform;
-    /* /* How long you want the element to transition from start to finish */
-   -moz-transition-duration: 2s;
-    transition-duration: 2s;  
-    /* how long until the transition begins */
-    -moz-transition-delay: 0s;
-    transition-delay: 0s; 
-    /* how we want our elements to tranistion ease, ease-in ease-out ease-in-out */
-    -moz-transition-timing-function: ease;
-    transition-timing-function: ease;
+
     
-    
+        /* properties you want to transition  */
+            transition-property: all; 
+            -moz-transition-property: all;
+        /* /* How long you want the element to transition from start to finish */
+            transition-duration: 2s;
+            
+        /* how long until the transition begins */
+                transition-delay: 2s;
+        /* how we want our elements to tranistion ease, ease-in ease-out ease-in-out */
+                transition-timing-function: ease-out;
+
+
 }
 
-        .hover:hover {
-                color: purple; 
-                background-color: turquoise;
-        }
+      
+.hover:hover {
+        color: purple;
+        background-color: turquoise;
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 
-        /* measured in deg */
-        .rotate:hover {
-                color: purple;
-                background-color: turquoise;
-                transform: rotate(360deg); 
+}
+/* /* measured in deg  */
+.rotate:hover {
+        color: purple;
+        background-color: turquoise;
+        transform: rotate(360deg);
+}
+/* measured in deg */
 
-        }
-        /* /* measured in deg  */
-        .skew:hover {
-                color: black;
-                background-color: turquoise;
-                transform: skewX(20deg); 
-        }
+.skew:hover {
+        color: purple;
+        background-color: turquoise;
+        transform: skew(20deg);
+        
+}
 
                 /* measured in px */
-        .translatex:hover {
-                color: black;
-                background-color: turquoise;
-                transform: translateX(30px); 
-        }
+            .translatex:hover {
+                    color: purple;
+                    background-color: turquoise;
+                    transform: translateX(-30px);
+            }
 
-        .translateY:hover {
-                color: purple;
-                background-color: turquoise;
-                transform: translateY(30px); 
-        }       
+            .translateY:hover {
+                    color:purple;
+                    background-color: wheat;
+                    transform: translateY(50px); 
+            }
 
-        /* measure with an integar  */
-        .scale:hove
+        /* measure with an integar or % */
         .scale:hover {
                 color: purple;
                 background-color: turquoise;
-                transform: scaleX(2); 
+                transform: scale(50%);
         }
 
         /* measure with inregars x y z axis and deg */
-        .threeD:hover {
+        .threeD:hover{
                 color: purple;
                 background-color: turquoise;
-                transform: rotate3d(1, 1, 1, 360deg); 
+                transform: rotate3d(1, 1, 1, 180deg);
         }
